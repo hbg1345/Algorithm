@@ -30,3 +30,5 @@ void _main(int tnum) {
     rep(i, n-1)
         ans += diff[i], cout << (s < 0 ? -ans: ans) << endl;
 }
+
+// 2184kb	0ms
