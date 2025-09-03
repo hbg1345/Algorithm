@@ -37,3 +37,5 @@ public class Main {
         new Main().sol();
     }
 }
+
+//14088KB	220ms

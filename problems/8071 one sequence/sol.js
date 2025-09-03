@@ -36,4 +36,4 @@ function solve() {
 
 solve();
 
-//	13936kb	588ms
+//	13936KB	588ms

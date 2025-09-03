@@ -31,4 +31,9 @@ void _main(int tnum) {
         ans += diff[i], cout << (s < 0 ? -ans: ans) << endl;
 }
 
-// 2184kb	0ms
+int main() {
+    _main(0);
+    return 0;
+}
+
+// 2184KB	0ms
