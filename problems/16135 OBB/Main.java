@@ -60,9 +60,6 @@ public class Main {
         u = p2[0].subtract(p2[1]);
         ret |= chek.test(u);
         System.out.println(!ret ? 1 : 0);
-        // String[] l1 = buffer.split(" ");
-        // String l2 = br.readLine();
-        // System.out.println(l1);
     }
     public static void main(String[] args) throws IOException{
         new Main().sol();
