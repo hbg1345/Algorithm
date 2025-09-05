@@ -1,3 +1,4 @@
+\usepackage{amsmath}
 피보나치 수의 제곱의 합
 =
 문제 원문: https://www.acmicpc.net/problem/11440
