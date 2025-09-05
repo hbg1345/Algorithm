@@ -19,7 +19,13 @@ $$\begin{pmatrix} F_n \\ F_{n+1} \end{pmatrix} = \begin{pmatrix} 0 & 1\\ 1 & 1 \
 
 이를 재귀적으로 써내려가면 다음의 식이 얻어진다.\
 
-$$\begin{pmatrix} F_n \\ F_{n+1} \end{pmatrix} = \begin{pmatrix} 0 & 1\\ 1 & 1 \end{pmatrix}^n \begin{pmatrix} F_{0} \\ F_{1} \end{pmatrix}$$  
+$$\begin{pmatrix} F_n 
+
+F_{n+1} \end{pmatrix} = \begin{pmatrix} 0 & 1
+
+1 & 1 \end{pmatrix}^n \begin{pmatrix} F_{0} 
+
+F_{1} \end{pmatrix}$$  
 
 F_0와 F_1은 각각 0과 1이므로 n번 거듭제곱한 행렬의 2열의 원소가 $`F_n`$과 $`F_{n+1}`$이다.
 n번 거듭제곱한 분할 정복을 이용하여 $`logn`$번의 행렬곱 연산을 통해 구할 수 있다.
