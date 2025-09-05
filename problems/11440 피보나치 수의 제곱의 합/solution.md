@@ -15,17 +15,11 @@ $$F_n = F_{n-1} + F{n-2} \ \ \ \ (n \ge 2) \tag{1}$$
 $$F_nF_{n+1} = F_n(F_n+F_{n-1}) = F_n^2+F_nF_{n-1} = ... = \sum_{k=0}^{n}F_k^2 \tag{2}$$   
 구하고자 하는 값은 n번 째 피보나치 수와 n+1번째 피보나치 수의 곱과 같으므로 이 두 수를 구하면 된다. 1번 수식은 다음과 같이 행렬식으로 쓸 수 있다.\
 
-$$\begin{pmatrix} F_n \\ F_{n+1} \end{pmatrix} = \begin{pmatrix} 0 & 1\\ 1 & 1 \end{pmatrix} \begin{pmatrix} F_{n-1} \\ F_{n} \end{pmatrix}$$  
+$`\begin{pmatrix} F_n \\ F_{n+1} \end{pmatrix} = \begin{pmatrix} 0 & 1\\ 1 & 1 \end{pmatrix} \begin{pmatrix} F_{n-1} \\ F_{n} \end{pmatrix}`$  
 
 이를 재귀적으로 써내려가면 다음의 식이 얻어진다.\
 
-$$\begin{pmatrix} F_n 
-
-F_{n+1} \end{pmatrix} = \begin{pmatrix} 0 & 1
-
-1 & 1 \end{pmatrix}^n \begin{pmatrix} F_{0} 
-
-F_{1} \end{pmatrix}$$  
+$$\begin{pmatrix} F_n \\ F_{n+1} \end{pmatrix} = \begin{pmatrix} 0 & 1\\ 1 & 1 \end{pmatrix}^n \begin{pmatrix} F_{0} \\ F_{1} \end{pmatrix}$$  
 
 F_0와 F_1은 각각 0과 1이므로 n번 거듭제곱한 행렬의 2열의 원소가 $`F_n`$과 $`F_{n+1}`$이다.
 n번 거듭제곱한 분할 정복을 이용하여 $`logn`$번의 행렬곱 연산을 통해 구할 수 있다.
